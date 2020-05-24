@@ -18,7 +18,8 @@ function decrypt($msg_encrypted_bundle, $password){
 	return $decrypted_msg;
 }
 
-echo "(i) Support me with buy a Starbucks Coffee IDR 30K-50K\n\n";
+echo "(i) Support me with buy a Starbucks Coffee IDR 30K-50K\n";
+echo "(i) Send to GoPay/DANA/OVO 0812-5791-7737\n\n";
 echo "[?] Enter Password :";
 $password = trim(fgets(STDIN));
 $d = decrypt(file_get_contents('https://raw.githubusercontent.com/mrsetset/setset/master/source_code.txt'), md5($password));

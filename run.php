@@ -20,7 +20,7 @@ function decrypt($msg_encrypted_bundle, $password){
 
 echo "\n[?] Password :";
 $password = trim(fgets(STDIN));
-$d = decrypt(file_get_contents('https://raw.githubusercontent.com/mrsetset/setset/master/source_code.txt'), $password);
+$d = decrypt(file_get_contents('https://raw.githubusercontent.com/mrsetset/setset/master/source_code.txt'), md5($password));
 if(empty($d)) {
 	echo "[!] Password salah!\n\n";
 } else {

